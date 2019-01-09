@@ -8,7 +8,7 @@ Android针对点击事件的无痕埋点插件。
 
 ## 配置
 
-####配置流程
+#### 配置流程
 
 1.在根目录的build.gradle里如下配置。
 
@@ -60,7 +60,7 @@ public class ClickTrace {
 
 如果配置正确的话，当你点击任意View，只要该View设置了点击事件，均会在点击事件执行完毕后执行你的回调函数。
 
-####回调函数参数解释
+#### 回调函数参数解释
 
 参数|解释
 ---|---
@@ -70,5 +70,5 @@ path|该view的组件树路径。如：DecorView/LinearLayout/FrameLayout/Action
 content|如果该组件继承自TextView，content会返回文字内容。
 position|如果你点击的是ListView中的某一个item，它将返回该item的position。
 
-####已知问题
+#### 已知问题
 ListView可能在某些情况存在漏点问题（尽量不要通过setItemOnClickListener给每个item设置点击事件）；
