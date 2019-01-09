@@ -39,11 +39,11 @@ clickconfig {
     tracepath 'com.app.dixon.testgradleclicktrace.ClickTrace', 'log'
 }
 ```
-配置监听页面：
+<1.配置监听页面：
 
 如上，假如你只想监听单个Activity的所有点击事件，请在`basepath`如上配置该Activity的全路径；你可以使用`basepaths`来配置多个页面；如果你想监听app内的所有Activity，请配置你的`basepath`为你的BaseActivity。
 
-配置回调函数：
+<2.配置回调函数：
 
 你可以任意创建一个类，并手动命名函数作为你的回调函数。
 但是该函数要求有如下参数：
