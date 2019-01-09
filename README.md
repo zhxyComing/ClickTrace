@@ -65,7 +65,7 @@ public class ClickTrace {
 参数|解释
 ---|---
 view|你点击的组件。你可以通过`view.getClass().getSimpleName()`获取名称，或通过`view.getId()`获取id（动态添加的view id为-1）。
-eventType|事件类型。clicktrace不仅仅会监听点击，还包括滑动、长按等AccessibilityDelegate支持的事件，如果你仅对点击事件感兴趣，可以通过判断`eventType==AccessibilityEvent.TYPE_VIEW_CLICKED`或`eventType==1`来进行筛选。
+eventType|事件类型。clicktrace不仅仅会监听点击，还包括滑动、长按等AccessibilityDelegate支持的事件，如果你仅对点击事件感兴趣，可以通过判断`eventType==AccessibilityEvent.TYPE_VIEW_CLICKED`或`eventType==1`来进行筛选。（**强烈建议筛选**）
 path|该view的组件树路径。如：DecorView/LinearLayout/FrameLayout/ActionBarOverlayLayout/ContentFrameLayout/ConstraintLayout/AppCompatTextView
 content|如果该组件继承自TextView，content会返回文字内容。
 position|如果你点击的是ListView中的某一个item，它将返回该item的position。
