@@ -77,3 +77,4 @@ position|如果你点击的是ListView中的某一个item，它将返回该item�
 
 #### 已知问题
 ListView可能在某些情况存在漏点问题（尽量不要通过setItemOnClickListener给每个item设置点击事件）；
+可能与其它字节码插桩插件不兼容，目前发现的有hibeavor；
